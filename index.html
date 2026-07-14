@@ -1,35 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 첫 웹사이트</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 50px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h1 { color: #4A90E2; }
-        p { font-size: 1.1rem; }
-    </style>
+  <meta charset="UTF-8">
+  <title>loopbackIP의 학습 노트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-    <div class="container">
-        <h1>안녕하세요! 제 웹사이트에 오신 것을 환영합니다 🚀</h1>
-        <p>GitHub Pages를 통해 성공적으로 호스팅되었습니다.</p>
-    </div>
+  <div id="app">로딩 중...</div>
+  <script>
+    window.$docsify = {
+      name: '학습 노트',
+      repo: 'https://github.com/loopbackIP/loopbackIP.github.io',
+      loadSidebar: true, // 사이드바 활성화
+      subMaxLevel: 2
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
